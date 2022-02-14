@@ -1,0 +1,23 @@
+{
+  "name": "test-ts-eslint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src/**/*.ts --rulesdir custom-eslint-rules  --config .eslintrc.js",
+    "compile:rules": "cd custom-eslint-rules/ && tsc && cd ../",
+    "compile:code": "tsc"
+  },
+  "keywords": [],
+  "author": "nmarcellin2@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "5.10.1",
+    "@typescript-eslint/parser": "5.10.1",
+    "eslint": "8.8.0",
+    "typescript": "4.5.5"
+  },
+  "dependencies": {
+    "rxjs": "7.5.4"
+  }
+}
