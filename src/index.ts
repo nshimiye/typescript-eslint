@@ -14,7 +14,7 @@ function MyEventFunction() {
 
 
 
-// MyPromiseFunction().then(console.log);
-MyEventFunction().toPromise().then(console.log);
+MyPromiseFunction().then(console.log);
+// MyEventFunction().toPromise().then(console.log);
 MyEventFunction().subscribe(console.log);
 
